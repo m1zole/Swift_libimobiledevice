@@ -14,5 +14,6 @@
 #include <libimobiledevice/afc.h>
 #include <libimobiledevice/service.h>
 #include <libimobiledevice/property_list_service.h>
+#include <plist/plist.h>
 
 #endif /* Swift_libimobiledevice_h */
