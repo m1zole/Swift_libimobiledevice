@@ -37,7 +37,7 @@ internal class LibiMobileDevicePlist {
         plist_to_xml(handle, &strPtr, &len)
         defer {
             // Free the XML again
-            plist_to_xml_free(strPtr)
+            plist_mem_free(strPtr)
         }
         
         let res = try PropertyListSerialization.propertyList(from: Data(bytes: strPtr!, count: Int(len)), format: nil)
